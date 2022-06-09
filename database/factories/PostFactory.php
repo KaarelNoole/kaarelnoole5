@@ -23,9 +23,9 @@ class PostFactory extends Factory
             'category_id' => Category::factory(),
             'title' => $this->faker->sentence,
             'slug' => $this->faker->slug,
-            "excerpt"=>'<p>'.implode('</p><p>',$this->faker->paragraphs(2, false)).'</p>',
-            "body"=>'<p>'.implode('</p><p>',$this->faker->paragraphs(6, false)).'</p>',
-            "published_at"=>$this->faker->dateTimeBetween('-1 week','+1 week')
+            "excerpt"=>'<p>'.implode('</p><p>', $this->faker->paragraphs(2)) . '</p>',
+            "body"=>'<p>'.implode('</p><p>', $this->faker->paragraphs(6)) . '</p>',
+            "published_at"=>$this->faker->dateTimeBetween('-1 week','+1 week'),
         ];
     }
 }
