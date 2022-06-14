@@ -10,7 +10,7 @@
         </div>
         <!--  Author -->
         <div class="relative lg:inline-flex bg-gray-100 rounded-xl">
-            <x-author-dropdown />
+            <x-authors-dropdown />
         </div>
         <!-- Other Filters -->
         {{-- <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl">
